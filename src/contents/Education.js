@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import Widecard from '../components/Widecard';
+import React from 'react';
+import WideCard from '../components/WideCard';
 
-class Education extends Component {
-    render() {
+const Education = () => {
         return (
             <div className="condiv">
-            <h1 className="subtopic">My Education</h1>
-            <Widecard title="Computer science" where="Business and Technology University" from="September 2019" to="Present"/>
+            <h1 className="subtopic">Education</h1>
+            <WideCard
+                title={"Bachelor's degree in Computer Science"}
+                where={"BTU • Business and Technology University"}
+                from={"September 2019"}
+                to={"Present"}/>
             </div>
             )
-        }
+
     }
     
 export default Education
-    
