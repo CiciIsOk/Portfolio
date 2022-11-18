@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavItem from './NavItem';
-import Experience from "../contents/Experience";
+import Navitem from './Navitem';
+
 
 class Navbar extends Component {
     constructor(props)
@@ -23,12 +23,12 @@ class Navbar extends Component {
         return (
             <nav>
                 <ul>
-                    <NavItem item="Home" tolink="/"  activec={this.activeItem}></NavItem>
-                    <NavItem item="About" tolink="/about"  activec={this.activeItem}></NavItem>
-                    <NavItem item="Education" tolink="/education"  activec={this.activeItem}></NavItem>
-                    <NavItem item="Experience" tolink="/experience"  activec={this.activeItem}></NavItem>
-                    <NavItem item="Skills" tolink="/skills"  activec={this.activeItem}></NavItem>
-                    <NavItem item="Contact" tolink="/contact"  activec={this.activeItem}></NavItem>
+                    <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
+                    <Navitem item="About" tolink="/about"  activec={this.activeitem}></Navitem>
+                    <Navitem item="Education" tolink="/education"  activec={this.activeitem}></Navitem>
+                    <Navitem item="Experience" tolink="/experience"  activec={this.activeItem}></Navitem>
+                    <Navitem item="Skills" tolink="/skills"  activec={this.activeitem}></Navitem>
+                    <Navitem item="Contact" tolink="/contact"  activec={this.activeitem}></Navitem>
                 </ul>
             </nav>
         )
