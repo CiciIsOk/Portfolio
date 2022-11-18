@@ -10,6 +10,7 @@ import About from './contents/About';
 import Education from './contents/Education';
 import Skills from './contents/Skills';
 import Contact from './contents/Contact';
+import Experience from "./contents/Experience";
 
 
 
@@ -30,8 +31,13 @@ function App() {
     <Route path="/skills">
     <Skills />
     </Route>
+
+      <Route path="/experience">
+        <Experience />
+      </Route>
+
     <Route path="/contact">
-    <Contact />
+      <Contact />
     </Route>
     </div>
     </Router>
