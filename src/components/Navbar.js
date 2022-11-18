@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navitem from './Navitem';
+import NavItem from './NavItem';
+import Experience from "../contents/Experience";
 
 class Navbar extends Component {
     constructor(props)
@@ -9,7 +10,7 @@ class Navbar extends Component {
             'NavItemActive':''
         }
     }
-    activeitem=(x)=>
+    activeItem=(x)=>
     {
         if(this.state.NavItemActive.length>0){
             document.getElementById(this.state.NavItemActive).classList.remove('active');
@@ -21,17 +22,17 @@ class Navbar extends Component {
     render() {
         return (
             <nav>
-            <ul>
-            <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
-            <Navitem item="About" tolink="/about"  activec={this.activeitem}></Navitem>
-            <Navitem item="Education" tolink="/education"  activec={this.activeitem}></Navitem>
-            <Navitem item="Skills" tolink="/skills"  activec={this.activeitem}></Navitem>
-            <Navitem item="Contact" tolink="/contact"  activec={this.activeitem}></Navitem>
-            </ul>
+                <ul>
+                    <NavItem item="Home" tolink="/"  activec={this.activeItem}></NavItem>
+                    <NavItem item="About" tolink="/about"  activec={this.activeItem}></NavItem>
+                    <NavItem item="Education" tolink="/education"  activec={this.activeItem}></NavItem>
+                    <NavItem item="Experience" tolink="/experience"  activec={this.activeItem}></NavItem>
+                    <NavItem item="Skills" tolink="/skills"  activec={this.activeItem}></NavItem>
+                    <NavItem item="Contact" tolink="/contact"  activec={this.activeItem}></NavItem>
+                </ul>
             </nav>
-            )
-        }
+        )
     }
-    
-    export default Navbar
-    
+}
+
+export default Navbar
