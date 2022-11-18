@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Widecard extends Component {
-    render() {
+const WideCard = ({title,where,from,to}) => {
         return (
             <div class="widecard">
-            <div class="compdet">
-            <h3>{this.props.title}</h3>
-            <h4 class="secondtext">{this.props.where}</h4>
-            <h4 class="secondtext">{this.props.from} - {this.props.to}</h4>
-            </div>
+                <div class="compdet">
+                    <h2 className="secondtext">{where}</h2>
+                    <h3>{title}</h3>
+                    <h3 class="secondtext">{from} - {to}</h3>
+                </div>
             </div>
             )
         }
-    }
+
     
-export default Widecard
+export default WideCard
     
